@@ -4,8 +4,6 @@
   </a>
 </p>
 
-
-# terraform-aws-codedeploy
 Simple module that creates a CodeDeploy application, deployment group & associates the deployment group with an ASG.
 
 Upon launching the stack the following resources will be created:
