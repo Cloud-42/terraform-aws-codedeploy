@@ -4,9 +4,9 @@
   </a>
 </p>
 <p align="center">
-
-  Need help with your Cloud builds <a href="https://www.cloud42.io/contact/" target="_blank" rel="ContactUS">DROP US A LINE</a>
-
+<center>
+  Need help with your Cloud builds <a href="https://www.cloud42.io/contact/" target="_blank" rel="ContactUS"> DROP US A LINE</a>.
+</center>
 </p>
 
 
