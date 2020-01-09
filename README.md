@@ -1,14 +1,10 @@
 <p align="center">
-  <img width="300" height="300" src="https://www.cloud42.io/wp-content/uploads/2020/01/transparent_small.png">
+  <img width="200" height="200" src="https://www.cloud42.io/wp-content/uploads/2020/01/transparent_small.png">
 </p>
 
 
 # terraform-aws-codedeploy
 Simple module that creates a CodeDeploy app, deployment group to be associated to an ASG.
-
-![logo](https://www.cloud42.io/wp-content/uploads/2020/01/transparent_small.png)
-
-
 
 
 Upon launching the stack the following resources will be created:
