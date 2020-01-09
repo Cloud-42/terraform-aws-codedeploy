@@ -1,6 +1,7 @@
 # terraform-aws-codedeploy
 Simple module that creates a CodeDeploy app, deployment group to be associated to an ASG.
 
+![logo](https://www.cloud42.io/wp-content/uploads/2020/01/transparent_small.png)
 
 
 
