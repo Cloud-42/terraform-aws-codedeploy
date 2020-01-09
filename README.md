@@ -12,7 +12,7 @@ Upon launching the stack the following resources will be created:
 
  * CodeDeploy application
  * CodeDeploy deployment group ( Associated with an ASG )
- * s3 Bucket ( with lfecycle rules by default )  
+ * s3 Bucket ( with lifecycle rule by default )  
  * IAM role granting CodeDeploy access AutoScaling
 
 ## Dependencies and Prerequisites
