@@ -6,7 +6,7 @@
 
 ---
 
-<p style="text-align: center;">
+<p align=center>
 
 Need help with your Cloud builds 
 
