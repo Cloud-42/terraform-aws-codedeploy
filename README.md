@@ -1,5 +1,7 @@
 <p align="center">
+  <a href="https://www.cloud42.io/" rel="Homepage">
   <img width="200" height="200" src="https://www.cloud42.io/wp-content/uploads/2020/01/transparent_small.png">
+  </a>
 </p>
 
 
