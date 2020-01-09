@@ -8,9 +8,11 @@
 
 <p style="text-align: center;">
 
-Need help with your Cloud builds <a href="https://www.cloud42.io/contact/" target="_blank" rel="ContactUS"> DROP US A LINE</a>.
+Need help with your Cloud builds 
 
 </p>
+
+Need help with your Cloud builds <a href="https://www.cloud42.io/contact/" target="_blank" rel="ContactUS"> DROP US A LINE</a>.
 
 ---
 
