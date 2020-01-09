@@ -6,16 +6,8 @@
 
 ---
 <p align="center">Need help with your Cloud builds <a href="https://www.cloud42.io/contact/" target="_blank" rel="ContactUS"> DROP US A LINE</a>.</p>
-<p align=center>
-
-Need help with your Cloud builds 
-
-</p>
-
-Need help with your Cloud builds <a href="https://www.cloud42.io/contact/" target="_blank" rel="ContactUS"> DROP US A LINE</a>.
 
 ---
-
 
 Simple module that creates a CodeDeploy application, deployment group & associates the deployment group with an ASG.
 
