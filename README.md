@@ -8,10 +8,12 @@
 # terraform-aws-codedeploy
 Simple module that creates a CodeDeploy app, deployment group to be associated to an ASG.
 
-
 Upon launching the stack the following resources will be created:
 
- * 
+ * CodeDeploy application
+ * CodeDeploy deployment group ( Associated with an ASG )
+ * s3 Bucket ( with lfecycle rules by default )  
+ * IAM role granting CodeDeploy access AutoScaling
 
 ## Dependencies and Prerequisites
  * Terraform v0.12.18 +
@@ -20,23 +22,17 @@ Upon launching the stack the following resources will be created:
 ## Variables
 | Variable | Meaning |
 | :------- | :----- |
-| `` | |
-| `` | |
-| `` | |
-| `` | |
-| `` | |
-| `` | |
-| `` | |
-| `` | |
-| `` | |
-| `` | |
-| `` | |
-| `` | |
-| `` | |
-| `` | |
+| `orchestration` | Link to the orchestration used to create resources. |
+| `environment` | Environment where resources will be built. |
+| `autoscaling_groups` | The id of the AutoScaling Groups with which to associate the deployment. |
+| `compute_platform` | Compute platform type. ECS, Lambda, or Server. |
+| `name` | Application name |
+| `lifecycle_rule_enabled` | Whether or not to enable s3 lifecycle rule ( Default is to expire items after 120 days ) |
+| `deployment_config_name` | Deployment config name. See: https://docs.aws.amazon.com/codedeploy/latest/userguide/deployment-configurations.html |
 
 ## Outputs
- * 
+ * codedeploy_app
+ * codedeploy_deployment_group 
 
 ## Usage
 
