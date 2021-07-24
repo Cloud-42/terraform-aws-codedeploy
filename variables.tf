@@ -1,30 +1,44 @@
-variable "orchestration" {
-  description = "Link to the orchestration used to create the resources. Used when tagging resources."
-}
-
-variable "environment" {
-  description = "Environment where resources will be deployed. UAT, DEV, PRD, etc."
-}
-
 variable "autoscaling_groups" {
   description = "Autoscaling group to associate the deployment group with. ASG id required."
+  type        = string
 }
 
 variable "compute_platform" {
   description = "Compute platform type. ECS, Lambda, or Server."
+  type        = string
   default     = "Server"
 }
 
 variable "name" {
   description = "CodeDeploy application name."
+  type        = string
 }
 
 variable "lifecycle_rule_enabled" {
   description = "Enable / disable default lifecycle rule on s3 bucket."
+  type        = bool
   default     = "true"
 }
 
 variable "deployment_config_name" {
   description = "Deployment config name."
+  type        = string
   default     = "CodeDeployDefault.AllAtOnce"
+}
+
+variable "tags" {
+  description = "Tags map"
+  type        = map(string)
+  default     = {}
+}
+
+variable "expiration" {
+  description = "Specifies number of days after which s3 objects will expire"
+  type        = number
+  default     = 120
+}
+
+variable "data_bucket_name" {
+  type        = string
+  description = "Name for the s3 data bucket"
 }

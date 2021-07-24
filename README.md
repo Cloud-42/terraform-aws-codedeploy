@@ -25,17 +25,18 @@ Upon launching the stack the following resources will be created:
 ## Variables
 | Variable | Meaning |
 | :------- | :----- |
-| `orchestration` | Link to the orchestration used to create resources. |
-| `environment` | Environment where resources will be built. |
+| `tags` | Tags map. |
 | `autoscaling_groups` | The id of the AutoScaling Groups with which to associate the deployment. |
 | `compute_platform` | Compute platform type. ECS, Lambda, or Server. |
 | `name` | Application name |
 | `lifecycle_rule_enabled` | Whether or not to enable s3 lifecycle rule ( Default is to expire items after 120 days ) |
+| `expiration` | Specifies number of days after which s3 objects will expire |
 | `deployment_config_name` | Deployment config name. See: https://docs.aws.amazon.com/codedeploy/latest/userguide/deployment-configurations.html |
+| `data_bucket_name` | Name for the s3 data bucket |
 
 ## Outputs
- * codedeploy_app
- * codedeploy_deployment_group 
+ * codedeploy\_app
+ * codedeploy\_deployment\_group 
 
 ## Usage
 
@@ -50,5 +51,3 @@ module "codedeploy" {
 * To update the module run    : terraform get --update
 * To see a plan of changes    : terraform plan
 * To apply                    : terraform apply
-
-
