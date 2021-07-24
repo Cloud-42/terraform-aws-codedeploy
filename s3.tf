@@ -3,7 +3,7 @@
 # ---------------------------------------
 resource "aws_s3_bucket" "data" {
   bucket = "${var.name}-${aws_codedeploy_app.app.name}-"
-  acl           = "private"
+  acl    = "private"
   versioning {
     enabled = "true"
   }
