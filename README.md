@@ -32,6 +32,7 @@ Upon launching the stack the following resources will be created:
 | `lifecycle_rule_enabled` | Whether or not to enable s3 lifecycle rule ( Default is to expire items after 120 days ) |
 | `expiration` | Specifies number of days after which s3 objects will expire |
 | `deployment_config_name` | Deployment config name. See: https://docs.aws.amazon.com/codedeploy/latest/userguide/deployment-configurations.html |
+| `data_bucket_name` | Name for the s3 data bucket |
 
 ## Outputs
  * codedeploy\_app
