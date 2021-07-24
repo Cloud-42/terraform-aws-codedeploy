@@ -21,9 +21,7 @@ resource "aws_iam_role" "role" {
   ]
 }
 EOF
-
 }
-
 # ---------------------------------
 # Attach default Codedeploy policy to Role
 # ---------------------------------
@@ -31,4 +29,3 @@ resource "aws_iam_role_policy_attachment" "codedeploy_attach" {
   role       = aws_iam_role.role.name
   policy_arn = "arn:aws:iam::aws:policy/service-role/AWSCodeDeployRole"
 }
-
