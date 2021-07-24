@@ -30,6 +30,7 @@ Upon launching the stack the following resources will be created:
 | `compute_platform` | Compute platform type. ECS, Lambda, or Server. |
 | `name` | Application name |
 | `lifecycle_rule_enabled` | Whether or not to enable s3 lifecycle rule ( Default is to expire items after 120 days ) |
+| `expiration` | Specifies number of days after which s3 objects will expire |
 | `deployment_config_name` | Deployment config name. See: https://docs.aws.amazon.com/codedeploy/latest/userguide/deployment-configurations.html |
 
 ## Outputs
@@ -49,5 +50,3 @@ module "codedeploy" {
 * To update the module run    : terraform get --update
 * To see a plan of changes    : terraform plan
 * To apply                    : terraform apply
-
-
