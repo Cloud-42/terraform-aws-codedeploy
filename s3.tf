@@ -2,7 +2,7 @@
 # s3 Bucket
 # ---------------------------------------
 resource "aws_s3_bucket" "data" {
-  bucket = "${var.name}-${aws_codedeploy_app.app.name}-"
+  bucket = var.data_bucket_name
   acl    = "private"
   versioning {
     enabled = "true"

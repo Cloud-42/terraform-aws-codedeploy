@@ -37,3 +37,8 @@ variable "expiration" {
   type        = number
   default     = 120
 }
+
+variable "data_bucket_name" {
+  type        = string
+  description = "Name for the s3 data bucket"
+}
