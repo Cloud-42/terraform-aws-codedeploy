@@ -35,4 +35,5 @@ variable "tags" {
 variable "expiration" {
   description = "Specifies number of days after which s3 objects will expire"
   type = number
+  default = 120
 }
